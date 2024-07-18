@@ -6,3 +6,5 @@ Entity with a field using a jakarta.persistence.Convert may generate an issue if
 This project contains 2 reprositories :
 * [WorkingEntityRepository](https://github.com/tcordel/JpaWithConverters/blob/main/src/main/java/com/example/demo/issue/WorkingEntityRepository.java): with a working request using @Query
 * [BuggyEntityRepository](https://github.com/tcordel/JpaWithConverters/blob/main/src/main/java/com/example/demo/issue/BuggyEntityRepository.java): with the associated JPA query method (non working) 
+
+This code is still working untill spring boot 3.1.12, down since 3.2.0 
