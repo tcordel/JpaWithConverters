@@ -9,6 +9,7 @@ import org.springframework.data.repository.query.Param;
 public interface WorkingEntityRepository
 		extends JpaRepository<Entity, Long> {
 
+	// This is still working
 	@Query("SELECT E from Entity E where E.creationDate = :creationDate")
 	Entity working(@Param("creationDate") Date creationDate);
 }
